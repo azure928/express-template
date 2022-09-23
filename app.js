@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express = require("express");
+require("express-async-errors");
+const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
 const errorHandler = require("./middlewares/errorHandler");
@@ -15,8 +17,6 @@ sequelize
   .catch((err) => {
     console.error(err);
   });
-
-const app = express();
 
 app.use(cors());
 app.use(express.json());
