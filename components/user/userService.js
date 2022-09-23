@@ -1,4 +1,4 @@
-const userRepository = require("./userRepository");
+const userRepository = require('./userRepository');
 
 // 유저 생성
 exports.createUser = async () => {

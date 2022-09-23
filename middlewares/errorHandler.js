@@ -1,5 +1,5 @@
 const errorHandler = (err, req, res, next) => {
-  console.log("\x1b[33m%s\x1b[0m", err.stack);
+  console.log('\x1b[33m%s\x1b[0m', err.stack);
 
   const errorMessage = {
     error: {
